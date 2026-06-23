@@ -1,0 +1,26 @@
+{
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "none",
+  "extensions.autoUpdate": "off",
+  "extensions.autoCheckUpdates": false,
+  "workbench.enableExperiments": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+
+  "redhat.telemetry.enabled": false,
+
+  "chat.commandCenter.enabled": false,
+  "github.copilot.enable": {
+    "*": false
+  },
+
+  "security.workspace.trust.enabled": true,
+  "security.workspace.trust.startupPrompt": "once",
+
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": false,
+  "files.autoSave": "off",
+
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
+  "dev.containers.dockerPath": "docker"
+}
