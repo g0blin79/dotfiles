@@ -1,0 +1,37 @@
+# Generic cache/state
+**/Cache/
+**/CachedData/
+**/Code Cache/
+**/GPUCache/
+**/Service Worker/
+**/Session Storage/
+**/Local Storage/
+**/logs/
+**/logs/**
+**/*.log
+
+# VS Code / VSCodium machine state
+**/User/workspaceStorage/
+**/User/globalStorage/
+**/User/History/
+**/User/sync/
+**/User/CachedProfilesData/
+
+# Browser profiles - do not version
+.config/chromium/
+.config/google-chrome/
+.config/mozilla/
+
+# Credentials / tokens
+**/credentials*
+**/access_tokens*
+**/accounts*
+**/Token*
+**/tokens*
+**/secrets*
+**/keyrings/
+
+# KDE/session volatile
+**/session/
+**/kwallet*
+**/recently-used*
