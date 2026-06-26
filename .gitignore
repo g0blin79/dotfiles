@@ -35,3 +35,7 @@
 **/session/
 **/kwallet*
 **/recently-used*
+
+# Host-local theme state
+qt/.config/Kvantum/kvantum.kvconfig
+gtk/.config/gtk-3.0/settings.ini
