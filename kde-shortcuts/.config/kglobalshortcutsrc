@@ -11,6 +11,18 @@ _k_friendly_name=Keyboard Layout Switcher
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
 
+[kmix]
+_k_friendly_name=Audio Volume
+decrease_microphone_volume=Microphone Volume Down,Microphone Volume Down,Decrease Microphone Volume
+decrease_volume=Volume Down,Volume Down,Decrease Volume
+decrease_volume_small=Shift+Volume Down,Shift+Volume Down,Decrease Volume by 1%
+increase_microphone_volume=Microphone Volume Up,Microphone Volume Up,Increase Microphone Volume
+increase_volume=Volume Up,Volume Up,Increase Volume
+increase_volume_small=Shift+Volume Up,Shift+Volume Up,Increase Volume by 1%
+mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
+mute=Volume Mute,Volume Mute,Mute
+push_to_talk=none,none,Push to talk
+
 [ksmserver]
 Halt Without Confirmation=none,none,Shut Down Without Confirmation
 Lock Session=Screensaver\tMeta+L,Screensaver\tMeta+L,Lock Session
@@ -303,3 +315,7 @@ _launch=Ctrl+Space
 
 [services][org.kde.plasma.emojier.desktop]
 _launch=Ctrl+Shift+E
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
