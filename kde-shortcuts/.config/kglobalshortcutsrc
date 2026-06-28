@@ -315,7 +315,3 @@ _launch=Ctrl+Space
 
 [services][org.kde.plasma.emojier.desktop]
 _launch=Ctrl+Shift+E
-
-[services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=none
-OpenWithoutScreenshot=none
