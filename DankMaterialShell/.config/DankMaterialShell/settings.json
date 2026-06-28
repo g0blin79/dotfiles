@@ -307,7 +307,7 @@
   "matugenTemplateVscode": true,
   "matugenTemplateEmacs": true,
   "matugenTemplateZed": true,
-  "showDock": true,
+  "showDock": false,
   "dockAutoHide": true,
   "dockSmartAutoHide": false,
   "dockGroupByApp": true,
