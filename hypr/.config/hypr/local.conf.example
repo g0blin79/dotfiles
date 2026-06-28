@@ -1,0 +1,2 @@
+# Copy or symlink this to ~/.config/hypr/local.conf for non-versioned local overrides.
+# Keep machine selection in ~/.config/hypr/machine.conf.
