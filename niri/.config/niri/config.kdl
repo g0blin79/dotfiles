@@ -101,8 +101,6 @@ layout {
 
 // Startup processes converted from Hyprland exec-once.
 // I intentionally do not start waybar because your Hyprland setup uses Dank Material Shell.
-// If your xdg-portal-switch script supports a "niri" target, this is the closest equivalent.
-spawn-sh-at-startup "~/.local/bin/xdg-portal-switch niri || true"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 spawn-at-startup "hypridle"
 spawn-at-startup "dms" "run"
