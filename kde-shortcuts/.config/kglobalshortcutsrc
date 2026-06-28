@@ -158,7 +158,7 @@ Window Custom Quick Tile Bottom=none,none,Custom Quick Tile Window to the Bottom
 Window Custom Quick Tile Left=none,none,Custom Quick Tile Window to the Left
 Window Custom Quick Tile Right=none,none,Custom Quick Tile Window to the Right
 Window Custom Quick Tile Top=none,none,Custom Quick Tile Window to the Top
-Window Fullscreen=none,none,Make Window Fullscreen
+Window Fullscreen=Alt+F,none,Make Window Fullscreen
 Window Grow Horizontal=none,none,Expand Window Horizontally
 Window Grow Vertical=none,none,Expand Window Vertically
 Window Lower=none,none,Lower Window
@@ -303,6 +303,9 @@ show-on-mouse-pos=Meta+V,Meta+V,Show Clipboard Items at Mouse Position
 switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity
 toggle do not disturb=none,none,Toggle do not disturb
+
+[services][kitty.desktop]
+_launch=Ctrl+Return
 
 [services][org.kde.dolphin.desktop]
 _launch=Ctrl+G
