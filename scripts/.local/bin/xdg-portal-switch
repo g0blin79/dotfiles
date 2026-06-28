@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+mode="${1:-}"
+
+case "$mode" in
+  hyprland)
+    src="$HOME/.config/xdg-desktop-portal/portals.hyprland.conf"
+    ;;
+  kde|plasma)
+    src="$HOME/.config/xdg-desktop-portal/portals.kde.conf"
+    ;;
+  *)
+    echo "Usage: xdg-portal-switch {hyprland|kde}"
+    exit 2
+    ;;
+esac
+
+dst="$HOME/.config/xdg-desktop-portal/portals.conf"
+
+echo "Switching XDG portal to: $mode"
+
+# --- sanity check ---
+if [[ ! -f "$src" ]]; then
+  echo "ERROR: source config not found: $src"
+  exit 1
+fi
+
+# --- remove existing portals.conf if present (file or symlink) ---
+if [[ -e "$dst" || -L "$dst" ]]; then
+  echo "Removing existing $dst"
+  rm -f "$dst"
+fi
+
+# --- create fresh symlink ---
+ln -s "$src" "$dst"
+
+# --- stop everything cleanly ---
+systemctl --user stop xdg-desktop-portal.service 2>/dev/null || true
+systemctl --user stop xdg-desktop-portal-hyprland.service 2>/dev/null || true
+systemctl --user stop xdg-desktop-portal-kde.service 2>/dev/null || true
+systemctl --user stop xdg-desktop-portal-gtk.service 2>/dev/null || true
+
+sleep 0.3
+
+# --- start main portal ---
+systemctl --user start xdg-desktop-portal.service
+
+echo "Active portal backends:"
+busctl --user list | grep org.freedesktop.impl.portal.desktop || true
+
+echo "Done."
+

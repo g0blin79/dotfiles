@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+connected="$(hyprctl monitors all)"
+
+if ! grep -q "Monitor HDMI-A-1" <<< "$connected" || ! grep -q "Monitor DP-1" <<< "$connected"; then
+  notify-send "Paul docked" "Monitor esterni non trovati: non disabilito eDP-1"
+  exit 1
+fi
+
+hyprctl --batch "\
+keyword monitor HDMI-A-1,1920x1080,0x0,1 ; \
+keyword monitor DP-1,1920x1080,1920x0,1 ; \
+keyword monitor eDP-1,disable"

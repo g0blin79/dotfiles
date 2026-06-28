@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+hyprctl --batch "\
+keyword monitor eDP-1,preferred,auto,1 ; \
+keyword monitor HDMI-A-1,disable ; \
+keyword monitor DP-1,disable"
