@@ -444,15 +444,7 @@
           "enabled": true
         },
         {
-          "id": "systemTray",
-          "enabled": true
-        },
-        {
           "id": "cpuUsage",
-          "enabled": true
-        },
-        {
-          "id": "memUsage",
           "enabled": true
         },
         {
@@ -461,6 +453,18 @@
         },
         {
           "id": "controlCenterButton",
+          "enabled": true,
+          "showAudioPercent": false,
+          "showBrightnessIcon": false,
+          "showBrightnessPercent": false,
+          "showBatteryIcon": false
+        },
+        {
+          "id": "battery",
+          "enabled": true
+        },
+        {
+          "id": "systemTray",
           "enabled": true
         },
         {
