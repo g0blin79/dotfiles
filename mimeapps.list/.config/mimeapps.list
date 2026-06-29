@@ -18,6 +18,11 @@ x-scheme-handler/slack=slack.desktop;
 x-scheme-handler/webcal=chromium.desktop;
 application/pgp-keys=org.kde.kate.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-SU9TP3.desktop;
+audio/mpeg=org.kde.elisa.desktop
+audio/x-wav=org.kde.elisa.desktop
+audio/wav=org.kde.elisa.desktop
+audio/flac=org.kde.elisa.desktop
+audio/ogg=org.kde.elisa.desktop
 
 [Default Applications]
 application/pdf=org.kde.okular.desktop;
@@ -43,3 +48,8 @@ message/rfc822=userapp-Thunderbird-SU9TP3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-SU9TP3.desktop
 x-scheme-handler/antigravity=antigravity.desktop
 inode/directory=org.kde.dolphin.desktop
+audio/mpeg=org.kde.elisa.desktop
+audio/x-wav=org.kde.elisa.desktop
+audio/wav=org.kde.elisa.desktop
+audio/flac=org.kde.elisa.desktop
+audio/ogg=org.kde.elisa.desktop
