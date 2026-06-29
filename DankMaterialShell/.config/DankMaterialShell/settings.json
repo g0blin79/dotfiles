@@ -385,7 +385,10 @@
     "reboot",
     "logout",
     "poweroff",
-    "lock"
+    "lock",
+    "suspend",
+    "restart",
+    "hibernate"
   ],
   "powerMenuDefaultAction": "poweroff",
   "powerMenuGridLayout": true,
