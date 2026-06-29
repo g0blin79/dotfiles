@@ -23,6 +23,10 @@ audio/x-wav=org.kde.elisa.desktop
 audio/wav=org.kde.elisa.desktop
 audio/flac=org.kde.elisa.desktop
 audio/ogg=org.kde.elisa.desktop
+video/mp4=org.kde.haruna.desktop
+video/quicktime=org.kde.haruna.desktop
+video/x-matroska=org.kde.haruna.desktop;
+video/webm=org.kde.haruna.desktop
 
 [Default Applications]
 application/pdf=org.kde.okular.desktop;
@@ -53,3 +57,7 @@ audio/x-wav=org.kde.elisa.desktop
 audio/wav=org.kde.elisa.desktop
 audio/flac=org.kde.elisa.desktop
 audio/ogg=org.kde.elisa.desktop
+video/mp4=org.kde.haruna.desktop
+video/quicktime=org.kde.haruna.desktop
+video/x-matroska=org.kde.haruna.desktop
+video/webm=org.kde.haruna.desktop
