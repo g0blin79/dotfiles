@@ -42,3 +42,4 @@ application/pgp-keys=org.kde.kate.desktop
 message/rfc822=userapp-Thunderbird-SU9TP3.desktop
 x-scheme-handler/mid=userapp-Thunderbird-SU9TP3.desktop
 x-scheme-handler/antigravity=antigravity.desktop
+inode/directory=org.kde.dolphin.desktop
